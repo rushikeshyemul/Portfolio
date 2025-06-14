@@ -5,7 +5,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/rushikeshyemul",
   resume:
-    "https://drive.google.com/file/d/1IXO158Js6Gbl2kOlZg7LQwCsR_8CACB6/view?usp=sharing",
+    "https://drive.google.com/file/d/1q49ecXw5B4OYR_1LvfqSP52mPS6WUoup/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/rushikesh-yemul-51040322a/",
   twitter: "https://x.com/RushikeshYemul",
   insta: "https://www.instagram.com/its_rushikesh.y/",
