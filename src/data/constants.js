@@ -1,11 +1,11 @@
 export const Bio = {
   name: "Rushikesh Yemul",
-  roles: ["Front-End Developer", "Software Developer", "Programmer"],
+  roles: ["Full Stack Developer", "Software Developer", "Programmer"],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/rushikeshyemul",
   resume:
-    "https://drive.google.com/file/d/1q49ecXw5B4OYR_1LvfqSP52mPS6WUoup/view?usp=sharing",
+    "https://drive.google.com/file/d/1n2DlsXYfSyIk0Lq6oVh7vti0tLLnp22X/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/rushikesh-yemul-51040322a/",
   twitter: "https://x.com/RushikeshYemul",
   insta: "https://www.instagram.com/its_rushikesh.y/",
@@ -116,8 +116,8 @@ export const education = [
     id: 0,
     college: "MGM's College of Engineering, Nanded",
     date: "2021 - 2025",
-    grade: "7.00 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Information Technology at MGM's College of Engineering, Nanded. I have completed 7 semesters and have a CGPA of 7.00. I am also a member of the Google Developer Student Club (GDSC) at MGM COE, where I have learned and worked on exciting projects with a team of developers.",
+    grade: "7.23 CGPA",
+    desc: "I have completed my Bachelor's degree in Information Technology from MGM's College of Engineering, Nanded, with a CGPA of 7.23. During my academic journey, I have developed several projects that showcase my skills in Development and software engineering.",
     degree: "Bachelor of Technology - Information Technology",
   },
   {
@@ -139,6 +139,27 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    id: 8,
+    title: "AI Powered Quiz Maker",
+    date: "2025",
+    description:
+      "AI Powered Quiz Maker is a smart web application designed to simplify quiz creation using artificial intelligence. It allows users to generate customized quizzes instantly from dropdown list and uploaded documents and text input. With a user-friendly interface and intelligent question generation capabilities, it helps educators, students, and trainers create, manage, and evaluate quizzes with ease and accuracy.",
+    image:
+      "https://github.com/rushikeshyemul/AI-Powered-Quiz-Maker/blob/main/Banner%20Image.jpg?raw=true", // <-- Updated to a valid image URL
+    tags: [
+      "React Js",
+      "Tailwind CSS",
+      "Node Js",
+      "Express Js",
+      "MongoDB",
+      "Together API",
+      "REST API",
+    ],
+    category: "web app",
+    github: "https://github.com/rushikeshyemul/AI-Powered-Quiz-Maker",
+    webapp: "https://github.com/rushikeshyemul/AI-Powered-Quiz-Maker",
+  },
   {
     id: 9,
     title: "EMS - Employee Management System",
