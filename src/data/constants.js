@@ -35,6 +35,11 @@ export const skills = [
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
       {
+        name: "Next Js",
+        image:
+          "data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMSIgc3Ryb2tlPSIjMDAwIiBmaWxsPSJ3aGl0ZSIvPgogIDxwYXRoIGQ9Ik0xMCA4LjVsNCA3bC0yLTRoLTR2LTRoNHoiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPC9zdmc+Cg==",
+      },
+      {
         name: "Bootstrap",
         image:
           "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
@@ -90,7 +95,12 @@ export const skills = [
       {
         name: "Netlify",
         image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+CiAgPGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iNjIiIGZpbGw9IiMwMEM3QjciLz4KICA8cG9seWdvbiBwb2ludHM9IjMyLDg0IDY0LDM2IDk2LDg0IiBmaWxsPSIjZmZmZmZmIi8+Cjwvc3ZnPg==",
+      },
+      {
+        name: "Render",
+        image:
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+CiAgPGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iNjIiIGZpbGw9IiMwMDc4RkYiLz4KICA8cGF0aCBkPSJNNDUgNjBoMzZjNSAwIDkgNCA5IDl2OGMwIDUtNCA5LTkgOUg0NWMtNSAwLTktNC05LTl2LThjMC01IDQtOSA5LTl6bTAgM2MtMy4zIDAtNiAyLjctNiA2djhjMCAzLjMgMi43IDYgNiA2aDM2YzMuMyAwIDYtMi43IDYtNnYtOGMwLTMuMy0yLjctNi02LTZINDV6IiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPg==",
       },
       {
         name: "VS Code",
@@ -116,7 +126,7 @@ export const education = [
     id: 0,
     college: "MGM's College of Engineering, Nanded",
     date: "2021 - 2025",
-    grade: "7.23 CGPA",
+    grade: "8.50 CGPA",
     desc: "I have completed my Bachelor's degree in Information Technology from MGM's College of Engineering, Nanded, with a CGPA of 7.23. During my academic journey, I have developed several projects that showcase my skills in Development and software engineering.",
     degree: "Bachelor of Technology - Information Technology",
   },
@@ -146,7 +156,7 @@ export const projects = [
     description:
       "AI Powered Quiz Maker is a smart web application designed to simplify quiz creation using artificial intelligence. It allows users to generate customized quizzes instantly from dropdown list and uploaded documents and text input. With a user-friendly interface and intelligent question generation capabilities, it helps educators, students, and trainers create, manage, and evaluate quizzes with ease and accuracy.",
     image:
-      "https://github.com/rushikeshyemul/AI-Powered-Quiz-Maker/blob/main/Banner%20Image.jpg?raw=true", // <-- Updated to a valid image URL
+      "https://github.com/rushikeshyemul/Quiz-app/blob/main/image.png?raw=true", // <-- Updated to a valid image URL
     tags: [
       "React Js",
       "Tailwind CSS",
@@ -157,8 +167,8 @@ export const projects = [
       "REST API",
     ],
     category: "web app",
-    github: "https://github.com/rushikeshyemul/AI-Powered-Quiz-Maker",
-    webapp: "https://github.com/rushikeshyemul/AI-Powered-Quiz-Maker",
+    github: "https://github.com/rushikeshyemul/Quiz-app",
+    webapp: "https://quiz-app-gxw7.onrender.com",
   },
   {
     id: 9,
