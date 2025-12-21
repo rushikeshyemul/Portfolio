@@ -1,6 +1,5 @@
 import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
-import _default from '../../themes/default';
 
 export const Nav = styled.div`
     background-color: ${({theme}) => theme.card_light};
@@ -108,6 +107,26 @@ export const ButtonContainer = styled.div`
   }
 `;
 
+export const ThemeToggle = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: ${({ theme }) => theme.button};
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
 
 export const MobileIcon = styled.div`
   display: none;
@@ -116,7 +135,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 60%); 
     font-size: 1.5rem;
     cursor: pointer;
     color: ${({ theme }) => theme.text_primary};
