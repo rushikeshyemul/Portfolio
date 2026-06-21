@@ -1,6 +1,5 @@
-import React from "react";
-import RY from "../../images/RY.jpg";
-
+import React, { useState } from 'react'
+import RY from '@images/RY.jpg'
 import {
   Nav,
   NavLink,
@@ -14,34 +13,35 @@ import {
   MobileMenu,
   MobileLink,
   ThemeToggle,
-} from "./NavbarStyledComponent";
-import { FaBars, FaSun, FaMoon } from "react-icons/fa";
-import { Bio } from "../../data/constants";
-import { useTheme } from "styled-components";
+} from './NavbarStyledComponent'
+import { FaBars, FaSun, FaMoon } from 'react-icons/fa'
+import { Bio } from '@data/constants'
+import { useTheme } from 'styled-components'
 
 const Navbar = ({ darkMode, setDarkMode }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const theme = useTheme();
+  const [isOpen, setIsOpen] = useState(false)
+  const theme = useTheme()
+
   return (
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
           <div
             style={{
-              display: "flex",
-              alignItems: "center",
-              color: "white",
-              marginBottom: "20px",
-              cursor: "pointer",
+              display: 'flex',
+              alignItems: 'center',
+              color: 'white',
+              marginBottom: '20px',
+              cursor: 'pointer',
             }}
           >
             <img
               src={RY}
               alt="RY Logo"
               style={{
-                height: "40px",
-                marginRight: "10px",
-                borderRadius: "50%",
+                height: '40px',
+                marginRight: '10px',
+                borderRadius: '50%',
               }}
             />
             <Span>Portfolio</Span>
@@ -51,13 +51,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <MobileIcon>
           <FaBars
             onClick={() => {
-              setIsOpen(!isOpen);
+              setIsOpen(!isOpen)
             }}
           />
         </MobileIcon>
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
         </NavItems>
@@ -65,7 +66,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <ThemeToggle onClick={() => setDarkMode(!darkMode)}>
             {darkMode ? <FaSun /> : <FaMoon />}
           </ThemeToggle>
-          <GitHubButton href={Bio.github} target="_blank">
+          <GitHubButton href={Bio.github} target="_blank" rel="noopener noreferrer">
             Github Profile
           </GitHubButton>
         </ButtonContainer>
@@ -74,7 +75,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <MobileLink
               href="#about"
               onClick={() => {
-                setIsOpen(!isOpen);
+                setIsOpen(!isOpen)
               }}
             >
               About
@@ -82,15 +83,23 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <MobileLink
               href="#skills"
               onClick={() => {
-                setIsOpen(!isOpen);
+                setIsOpen(!isOpen)
               }}
             >
               Skills
             </MobileLink>
             <MobileLink
+              href="#experience"
+              onClick={() => {
+                setIsOpen(!isOpen)
+              }}
+            >
+              Experience
+            </MobileLink>
+            <MobileLink
               href="#projects"
               onClick={() => {
-                setIsOpen(!isOpen);
+                setIsOpen(!isOpen)
               }}
             >
               Projects
@@ -98,25 +107,26 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <MobileLink
               href="#education"
               onClick={() => {
-                setIsOpen(!isOpen);
+                setIsOpen(!isOpen)
               }}
             >
               Education
             </MobileLink>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginBottom: '20px' }}>
-            <ThemeToggle onClick={() => setDarkMode(!darkMode)} style={{ margin: 0 }}>
-              {darkMode ? <FaSun /> : <FaMoon />}
-            </ThemeToggle>
-          </div>
-          <GitHubButton
+              <ThemeToggle onClick={() => setDarkMode(!darkMode)} style={{ margin: 0 }}>
+                {darkMode ? <FaSun /> : <FaMoon />}
+              </ThemeToggle>
+            </div>
+            <GitHubButton
               style={{
-                padding: "10px 16px",
+                padding: '10px 16px',
                 background: `${theme.primary}`,
-                color: "white",
-                width: "max-content",
+                color: 'white',
+                width: 'max-content',
               }}
               href={Bio.github}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Github Profile
             </GitHubButton>
@@ -124,7 +134,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         )}
       </NavbarContainer>
     </Nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

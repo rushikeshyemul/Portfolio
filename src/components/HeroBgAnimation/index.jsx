@@ -1,5 +1,6 @@
-import React from 'react';
-import { Div } from './HeroBgAnimationStyle';
+import React from 'react'
+import { Div } from './HeroBgAnimationStyle'
+
 const HeroBgAnimation = () => (
   <Div>
     <svg
@@ -314,39 +315,6 @@ const HeroBgAnimation = () => (
           <stop offset="1" stopColor="#F46737" stopOpacity="0" />
         </linearGradient>
         <linearGradient
-          id="paint8_linear"
-          x1="414.367"
-          y1="301.156"
-          x2="439.435"
-          y2="276.118"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#13ADC7" />
-          <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint9_linear"
-          x1="515.943"
-          y1="288.238"
-          x2="541.339"
-          y2="291.454"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#13ADC7" />
-          <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="paint10_linear"
-          x1="117.001"
-          y1="230.619"
-          x2="117.36"
-          y2="258.193"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#945DD6" />
-          <stop offset="1" stopColor="#945DD6" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient
           id="paint11_linear"
           x1="476.529"
           y1="363.31"
@@ -360,6 +328,6 @@ const HeroBgAnimation = () => (
       </defs>
     </svg>
   </Div>
-);
+)
 
-export default HeroBgAnimation;
+export default HeroBgAnimation

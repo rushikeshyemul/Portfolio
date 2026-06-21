@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -9,13 +9,12 @@ export const HeroContainer = styled.div`
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
-  @media (max-width: 640) {
+  @media (max-width: 640px) {
     padding: 32px 16px;
   }
   z-index: 1;
-
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
-`;
+`
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -39,7 +38,7 @@ export const HeroBg = styled.div`
     justify-content: center;
     padding: 0 0px;
   }
-`;
+`
 
 export const HeroInnerContainer = styled.div`
   position: relative;
@@ -52,7 +51,8 @@ export const HeroInnerContainer = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
-`;
+`
+
 export const HeroLeftContainer = styled.div`
   width: 100%;
   order: 1;
@@ -71,7 +71,7 @@ export const HeroLeftContainer = styled.div`
     flex-direction: column;
     align-items: center;
   }
-`;
+`
 
 export const HeroRightContainer = styled.div`
   width: 100%;
@@ -89,7 +89,7 @@ export const HeroRightContainer = styled.div`
   @media (max-width: 640px) {
     margin-bottom: 30px;
   }
-`;
+`
 
 export const Img = styled.img`
   position: relative;
@@ -109,7 +109,7 @@ export const Img = styled.img`
     max-width: 280px;
     max-height: 280px;
   }
-`;
+`
 
 export const Title = styled.div`
   font-weight: 700;
@@ -125,7 +125,7 @@ export const Title = styled.div`
     line-height: 48px;
     margin-bottom: 8px;
   }
-`;
+`
 
 export const TextLoop = styled.div`
   font-weight: 600;
@@ -142,18 +142,18 @@ export const TextLoop = styled.div`
     line-height: 48px;
     margin-bottom: 16px;
   }
-`;
+`
 
 export const Span = styled.span`
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
-`;
+`
 
 export const SubTitle = styled.div`
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 42px;
-  color: ${({ theme }) => theme.text_primary + 95};
+  color: ${({ theme }) => theme.text_primary + '95'};
 
   @media (max-width: 960px) {
     text-align: center;
@@ -163,40 +163,37 @@ export const SubTitle = styled.div`
     font-size: 16px;
     line-height: 32px;
   }
-`;
+`
 
 export const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  width: 95%;
+  max-width: 300px;
+  text-align: center;
+  padding: 16px 0;
+  color: ${({ theme }) => theme.white};
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out !important;
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+  &:hover {
+    transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
+    box-shadow: 20px 20px 60px #1f2634;
     filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
+  }
 
-`;
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
+`

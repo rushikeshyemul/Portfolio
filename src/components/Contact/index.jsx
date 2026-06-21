@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
-import styled from "styled-components";
-import emailjs from "@emailjs/browser";
-import { Snackbar, Alert } from "@mui/material";
+import React, { useRef, useState } from 'react'
+import styled from 'styled-components'
+import emailjs from '@emailjs/browser'
+import { Snackbar, Alert } from '@mui/material'
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const Container = styled.div`
   @media (max-width: 960px) {
     padding: 0px;
   }
-`;
+`
 
 const Wrapper = styled.div`
   position: relative;
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
-`;
+`
 
 const Title = styled.div`
   font-size: 42px;
@@ -40,7 +40,7 @@ const Title = styled.div`
     margin-top: 12px;
     font-size: 32px;
   }
-`;
+`
 
 const Desc = styled.div`
   font-size: 18px;
@@ -51,7 +51,7 @@ const Desc = styled.div`
     margin-top: 12px;
     font-size: 16px;
   }
-`;
+`
 
 const ContactForm = styled.form`
   width: 95%;
@@ -64,14 +64,14 @@ const ContactForm = styled.form`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   margin-top: 28px;
   gap: 12px;
-`;
+`
 
 const ContactTitle = styled.div`
   font-size: 24px;
   margin-bottom: 6px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
-`;
+`
 
 const ContactInput = styled.input`
   flex: 1;
@@ -85,7 +85,7 @@ const ContactInput = styled.input`
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
   }
-`;
+`
 
 const ContactInputMessage = styled.textarea`
   flex: 1;
@@ -99,7 +99,7 @@ const ContactInputMessage = styled.textarea`
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
   }
-`;
+`
 
 const ContactButton = styled.input`
   width: 100%;
@@ -125,34 +125,34 @@ const ContactButton = styled.input`
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     opacity: 0.95;
   }
-`;
+`
 
 const Contact = () => {
-  const [open, setOpen] = useState(false);
-  const [error, setError] = useState(false); // for error snackbar
-  const form = useRef();
+  const [open, setOpen] = useState(false)
+  const [error, setError] = useState(false)
+  const form = useRef()
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     emailjs
       .sendForm(
-        "service_tq28iro", // ✅ Your service ID
-        "template_7klwzle", // ✅ Your template ID
+        'service_tq28iro',
+        'template_7klwzle',
         form.current,
-        "abRbeUtBRNj6Mb_D7" // ✅ Your public key
+        'abRbeUtBRNj6Mb_D7'
       )
       .then(
-        (result) => {
-          setOpen(true);
-          setError(false);
-          form.current.reset();
+        () => {
+          setOpen(true)
+          setError(false)
+          form.current.reset()
         },
         (error) => {
-          console.error("EmailJS error:", error);
-          setError(true);
+          console.error('EmailJS error:', error)
+          setError(true)
         }
-      );
-  };
+      )
+  }
 
   return (
     <Container>
@@ -175,7 +175,6 @@ const Contact = () => {
           <ContactButton type="submit" value="Send" />
         </ContactForm>
 
-        {/* Success Snackbar */}
         <Snackbar
           open={open}
           autoHideDuration={6000}
@@ -184,13 +183,12 @@ const Contact = () => {
           <Alert
             onClose={() => setOpen(false)}
             severity="success"
-            sx={{ width: "100%" }}
+            sx={{ width: '100%' }}
           >
             Email sent successfully!
           </Alert>
         </Snackbar>
 
-        {/* Error Snackbar */}
         <Snackbar
           open={error}
           autoHideDuration={6000}
@@ -199,14 +197,14 @@ const Contact = () => {
           <Alert
             onClose={() => setError(false)}
             severity="error"
-            sx={{ width: "100%" }}
+            sx={{ width: '100%' }}
           >
             Failed to send email. Please try again.
           </Alert>
         </Snackbar>
       </Wrapper>
     </Container>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

@@ -1,5 +1,5 @@
-import React from "react";
-import HeroBgAnimation from "../HeroBgAnimation";
+import React from 'react'
+import HeroBgAnimation from '@components/HeroBgAnimation'
 import {
   HeroContainer,
   HeroBg,
@@ -12,10 +12,10 @@ import {
   Span,
   SubTitle,
   ResumeButton,
-} from "./HeroStyle";
-import HeroImg from "../../images/HeroImage.jpg";
-import Typewriter from "typewriter-effect";
-import { Bio } from "../../data/constants";
+} from './HeroStyle'
+import HeroImg from '@images/HeroImage.jpg'
+import Typewriter from 'typewriter-effect'
+import { Bio } from '@data/constants'
 
 const HeroSection = () => {
   return (
@@ -42,7 +42,7 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="display">
+            <ResumeButton href={Bio.resume} target="display" rel="noopener noreferrer">
               Check Resume
             </ResumeButton>
           </HeroLeftContainer>
@@ -53,7 +53,7 @@ const HeroSection = () => {
         </HeroInnerContainer>
       </HeroContainer>
     </div>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

@@ -22,22 +22,22 @@ export const skills = [
       {
         name: "CSS",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
       },
       {
         name: "JavaScript",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
       {
         name: "React Js",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
       {
         name: "Next Js",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+          "data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMSIgc3Ryb2tlPSIjMDAwIiBmaWxsPSJ3aGl0ZSIvPgogIDxwYXRoIGQ9Ik0xMCA4LjVsNCA3bC0yLTRoLTR2LTRoNHoiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPC9zdmc+Cg==",
       },
       {
         name: "Bootstrap",
@@ -105,7 +105,7 @@ export const skills = [
       {
         name: "VS Code",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
       {
         name: "Postman",
@@ -147,25 +147,6 @@ export const education = [
     degree: "X - General Studies",
   },
 ];
-
-export const experience = [
-  {
-    id: 0,
-    role: "Software Developer",
-    company: "Vigorus AI Healthtech Private Limited",
-    date: "Nov 2025 - Present",
-    desc: "Worked on full-stack development using React, Next.js, Node.js, and Express. Developed and integrated REST APIs used by frontend applications. Used Git and GitHub for version control and team collaboration. Worked on CI/CD pipeline using GitHub Actions to automate build and deployment workflows.",
-    skills: ["React", "Next.js", "Node.js", "Express", "REST APIs", "Git", "GitHub Actions", "CI/CD"],
-  },
-  {
-    id: 1,
-    role: "Software Developer Intern",
-    company: "AksharaPlus.org",
-    date: "Feb 2025 - Jun 2025",
-    desc: "Developed an Automated Question Generation system using Python for Searching and Sorting Algorithms. Created logic for generating Multiple Choice, True/False, Numeric, and Match the Following questions at three difficulty levels. Contributed to the design, optimization, and documentation of the AQG system for deployment in education.",
-    skills: ["Python", "Question Generation", "Algorithms", "Documentation"],
-  },
-]
 
 export const projects = [
   {
